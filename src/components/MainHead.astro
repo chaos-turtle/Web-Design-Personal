@@ -4,11 +4,13 @@ import '../styles/global.css';
 interface Props {
 	title?: string | undefined;
 	description?: string | undefined;
+	tags?: string | undefined;
 }
 
 const {
-	title = 'Jeanine White: Personal Site',
-	description = 'The personal site of Jeanine White',
+	title = 'Stefan Misoski',
+	description = 'Welcome to my personal website!',
+	tags = 'HTML, CSS, JavaScript, TypeScript, Astro, Personal Web Page, Stefan Misoski',
 } = Astro.props;
 ---
 
@@ -16,6 +18,7 @@ const {
 <meta name="description" property="og:description" content={description} />
 <meta name="viewport" content="width=device-width" />
 <meta name="generator" content={Astro.generator} />
+<meta name="keywords" content={tags} />
 <title>{title}</title>
 
 <link rel="icon" type="image/svg+xml" href="/favicon.svg" />

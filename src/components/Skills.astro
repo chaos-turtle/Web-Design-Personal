@@ -1,26 +1,42 @@
 ---
-import Icon from './Icon.astro';
 ---
 
 <section class="box skills">
+
 	<div class="stack gap-2 lg:gap-4">
-		<Icon icon="terminal-window" color="var(--accent-regular)" size="2.5rem" gradient />
-		<h2>Full Stack</h2>
-		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.</p>
+		<div class="images">
+			<img src="/public/assets/skills/c.svg" alt="C logo">
+			<img src="/public/assets/skills/cpp.svg" alt="C++ logo">
+		</div>
+		<h2>Programming</h2>
 	</div>
 	<div class="stack gap-2 lg:gap-4">
-		<Icon icon="trophy" color="var(--accent-regular)" size="2.5rem" gradient />
-		<h2>Industry Leader</h2>
-		<p>Neque viverra justo nec ultrices dui. Est ultricies integer quis auctor elit.</p>
+		<div class="images">
+			<img src="/public/assets/skills/html.svg" alt="HTML Logo">
+			<img src="/public/assets/skills/css.svg" alt="CSS Logo">
+			<img src="/public/assets/skills/js.svg" alt="JavaScript Logo">
+			<img src="/public/assets/skills/ts.svg" alt="TypeScript Logo">
+		</div>
+		<h2>Front-End Web</h2>
 	</div>
 	<div class="stack gap-2 lg:gap-4">
-		<Icon icon="strategy" color="var(--accent-regular)" size="2.5rem" gradient />
-		<h2>Strategy-Minded</h2>
-		<p>Urna porttitor rhoncus dolor purus non enim praesent ornare.</p>
+		<div class="images">
+			<img src="/public/assets/skills/ps.svg" alt="Adobe Photoshop Logo">
+			<img src="/public/assets/skills/obs.svg" alt="OBS Logo">
+			<img src="/public/assets/skills/davinci.svg" alt="DaVinci Resolve Logo">
+		</div>
+		<h2>Images & Video</h2>
 	</div>
 </section>
 
 <style>
+	.images img {
+		height: 3rem;
+		width: 3rem;
+	}
+	.images {
+		display: flex;
+	}
 	.box {
 		border: 1px solid var(--gray-800);
 		border-radius: 0.75rem;
